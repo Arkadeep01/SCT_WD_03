@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="welcome_screen">
+        <h1>Welcome To The Game!</h1>
+        <img src = "images.jpg" alt = "Tic Tac Toe">
+        <fieldset id="mode-selection">
+            <legend><i>Choose a mode to start the game</i></legend>
+            <button onclick="StartGame('PvP')">Player vs Player.</button>
+            <button onclick="StartGame('PvAI')">Player vs Computer.</button>
+        </fieldset>
+    </section>
+
+
+    <main id="game_container" style="display: none;">
+        <header>
+            <h1>Tic Tac Toe</h1>
+        </header>
+        <div class="board" id="board"></div>
+        <article id="status">Player X's Turn</article>
+        <button onclick="resetGame()">Restart</button>
+        <button onclick="goback()">Exit to Main menu</button>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
